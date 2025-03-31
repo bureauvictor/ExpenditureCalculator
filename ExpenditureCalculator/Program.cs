@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF5cWWJCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXxednRSQmlYUUF/X0A=");
 
+static void Main(string[] args)
+{
+    // Do nothing
+}
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

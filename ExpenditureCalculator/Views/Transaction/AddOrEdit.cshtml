@@ -42,7 +42,13 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to previous page</a>
+    @* <button type="button" class="btn btn-primary">
+        Back to previous page 
+        <a asp-action="Index" />
+        </button> *@
+    <a asp-action="Index">
+        <button type="button" class="btn btn-primary">Back to previous page</button>
+    </a>
 </div>
 
 @* @section Scripts {
