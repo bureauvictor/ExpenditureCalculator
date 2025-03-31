@@ -1,0 +1,1 @@
+ExpenditureCalculator is an ASP.NET MVC project designed to help users manage and calculate their expenditures. This project is built using .NET 8 and can be deployed as a Docker container for easy distribution and scalability.
